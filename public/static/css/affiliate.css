@@ -34,26 +34,37 @@ html > body {
   padding: 1rem;
   gap: 2rem;
   flex-wrap: nowrap;
-}
 
-.affiliate-banner img {
-  max-width: 500px;
-  height: auto;
-  min-width: 0;
-  flex-shrink: 1;
-}
+  img {
+    max-width: 500px;
+    height: auto;
+    min-width: 0;
+    flex-shrink: 1;
+  }
 
-.affiliate-banner a {
-  color: #c62334;
-  flex-shrink: 0;
-  font-weight: bold;
-  text-align: right;
-  text-decoration: none;
-  white-space: nowrap;
-}
+  a {
+    color: #c62334;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1;
 
-.affiliate-banner a:hover {
-  text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+
+    svg {
+      width: 1em;
+      height: 1em;
+      fill: #c62334;
+      display: block;
+      flex-shrink: 0;
+    }
+  }
 }
 
 @media (max-width: 700px) {
@@ -62,10 +73,10 @@ html > body {
     justify-content: center;
     text-align: center;
     gap: .5rem;
-  }
 
-  .affiliate-banner img {
-    max-width: 100%;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
