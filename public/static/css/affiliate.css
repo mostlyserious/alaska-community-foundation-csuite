@@ -1,3 +1,5 @@
+/* Global
+----------------------------------------------- */
 html > body.ft_body {
   background: url(https://chilkatvalleycf.org/wp-content/themes/alaskacf/img/Yellow-Swoosh.png) center top no-repeat;
   color: rgb(64, 64, 64);
@@ -23,7 +25,51 @@ html > body {
   }
 }
 
-/* =Footer
+/* Banner
+----------------------------------------------- */
+.affiliate-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.affiliate-banner img {
+  max-width: 500px;
+  height: auto;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.affiliate-banner a {
+  color: #c62334;
+  flex-shrink: 0;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.affiliate-banner a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .affiliate-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+  }
+
+  .affiliate-banner img {
+    max-width: 100%;
+  }
+}
+
+/* Footer
 ----------------------------------------------- */
 #colophon.site-footer {
   background: #FDB913;
