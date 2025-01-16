@@ -1,24 +1,12 @@
 /* External CSS imports */
-@import url('https://alaskacf.org/wp-content/plugins/gf-tooltips-master/lib/css/gf-tooltips.css?ver=1.0');
-@import url('https://alaskacf.org/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.8');
-@import url('https://alaskacf.org/wp-content/uploads/maxmegamenu/style.css?ver=805df5');
-@import url('https://alaskacf.org/wp-includes/css/dashicons.min.css?ver=6.6.1');
-@import url('https://alaskacf.org/wp-content/plugins/megamenu-pro/icons/genericons/genericons/genericons.css?ver=2.4');
-@import url('https://alaskacf.org/wp-content/plugins/megamenu-pro/icons/fontawesome/css/font-awesome.min.css?ver=2.4');
-@import url('https://alaskacf.org/wp-content/plugins/megamenu-pro/icons/fontawesome5/css/all.min.css?ver=2.4');
-@import url('https://alaskacf.org/wp-content/plugins/megamenu-pro/icons/fontawesome6/css/all.min.css?ver=2.4');
-/*@import url('https://alaskacf.org/wp-content/plugins/search-filter-pro/public/assets/css/search-filter.min.css?ver=2.5.19');*/
-/*@import url('https://alaskacf.org/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/spectra-block-positioning.min.css?ver=2.16.5');*/
-/*@import url('https://alaskacf.org/wp-content/uploads/uag-plugin/custom-style-blocks.css?ver=2.16.5');*/
-/*@import url('https://alaskacf.org/wp-content/themes/alaskacf2021/print.css?ver=1.0.5');*/
-/*@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css?ver=1.0.5');*/
-@import url('https://alaskacf.org/wp-content/themes/alaskacf2021/style.css?ver=1.0.5');
+/*@import url('https://alaskacf.org/wp-content/uploads/maxmegamenu/style.css?ver=805df5');*/
+/*@import url('https://alaskacf.org/wp-content/themes/alaskacf2021/style.css?ver=1.0.5');*/
 
 /* Custom Container Styles */
 html > body.ft_body {
   color: #404040;
   font-family: "gill-sans-nova", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -61,3 +49,60 @@ html > body .ft_banner {
 html > body a:visited {
   color: #FFFFFF;
 }
+
+/* Navigation */
+/*.container-fluid {*/
+/*    width: 100%;*/
+/*    padding-right: 15px;*/
+/*    padding-left: 15px;*/
+/*    margin-right: auto;*/
+/*    margin-left: auto;*/
+/*}*/
+
+/*#utilities-menu-area {*/
+/*    position: inline;*/
+/*    background: linear-gradient(90deg, #391B42 0%, #724080 100%);*/
+/*    color: #fff;*/
+
+/*    @media (min-width: 768px) {*/
+/*      position: absolute;*/
+/*      background: transparent;*/
+/*    }*/
+/*}*/
+
+/*.justify-content-center {*/
+/*    -ms-flex-pack: center !important;*/
+/*    justify-content: center !important;*/
+/*}*/
+
+/*.row {*/
+/*    display: -ms-flexbox;*/
+/*    display: flex;*/
+/*    -ms-flex-wrap: wrap;*/
+/*    flex-wrap: wrap;*/
+/*    margin-right: -15px;*/
+/*    margin-left: -15px;*/
+/*}*/
+
+/*.col {*/
+/*    -ms-flex-preferred-size: 0;*/
+/*    flex-basis: 0;*/
+/*    -ms-flex-positive: 1;*/
+/*    flex-grow: 1;*/
+/*    max-width: 100%;*/
+/*}*/
+
+/*.purple-background {*/
+/*    background: linear-gradient(180deg, #391B42 0%, #724080 100%);*/
+/*    color: #fff;*/
+/*}*/
+/*.purple-wedge {*/
+/*    display: none;*/
+
+/*    @media (min-width: 768px) {*/
+/*        display: block;*/
+/*        background: transparent url('https://alaskacf.org/wp-content/themes/alaskacf2021/img/curved-border2.png') top center no-repeat;*/
+/*        background-size: cover;*/
+/*        min-height: 60px;*/
+/*    }*/
+/*}*/
