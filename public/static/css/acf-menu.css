@@ -1345,6 +1345,7 @@
   align-self: center;
   outline: 0;
   background: none;
+  height: 24px; /* Needed to center the icon */
 }
 #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-box {
   width: 40px;
