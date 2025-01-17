@@ -43,10 +43,35 @@ html > body .ft_content {
 }
 
 html > body .ft_banner {
-  padding-top: 0;
+  padding-top: 0; /* Remove space from top */
 }
 
-html > body a:visited {
+html > body .ft_footer {
+  text-align: left;
+}
+
+html > body .ft_banner,
+html > body .ft_footer {
+  /* Unset button styles from CSuite in banner and footer */
+  .btn {
+    box-shadow: none;
+    border-radius: inherit;
+  }
+
+  .btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    line-height: 1.5;
+  }
+
+  .btn-danger {
+      color: #fff;
+      background-color: #dc3545;
+      border-color: #dc3545;
+  }
+}
+
+
+    html > body a:visited {
   color: #FFFFFF;
 }
 
