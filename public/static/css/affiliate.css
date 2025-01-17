@@ -1,18 +1,29 @@
 /* Global
 ----------------------------------------------- */
-html > body.ft_body {
-  background: url(https://chilkatvalleycf.org/wp-content/themes/alaskacf/img/Yellow-Swoosh.png) center top no-repeat;
-  color: rgb(64, 64, 64);
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 html > body {
+  &.ft_body {
+    color: rgb(64, 64, 64);
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
   .ft_container {
-    max-width: 970px;
-    margin: 30px auto 0;
+    background: url(https://chilkatvalleycf.org/wp-content/themes/alaskacf/img/Yellow-Swoosh.png) center top no-repeat;
+
+    @media (max-width: 420px) {
+      background-position: center -210px;
+    }
+    @media (max-width: 599px) {
+      background-position: center -175px;
+    }
+    @media (max-width: 420px) {
+      background-position: center -210px;
+    }
+    @media (max-width: 599px) {
+      background-position: center -175px;
+    }
   }
 
   .ft_navigation,
@@ -23,7 +34,32 @@ html > body {
   .ft_banner {
     padding-top: 0;
   }
+
+  /* Adjust max width so the nav and footer can stretch full width */
+  .ft_container.container {
+    max-width: none;
+    padding: 30px 0 0;
+  }
+
+  .ft_banner,
+  .ft_header,
+  .ft_content {
+    margin: 0 auto;
+
+    @media (max-width: 420px) {
+      margin: 0 15px;
+    }
+
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 970px;
+    }
+  }
 }
+
 
 /* Banner
 ----------------------------------------------- */
@@ -89,10 +125,6 @@ html > body {
   line-height: 1.5;
   text-align: left;
 
-  @media (min-width: 600px) and (max-width: 969px) {
-    padding: 0 15px;
-  }
-
   a {
     color: #FFFFFF;
   }
@@ -136,6 +168,10 @@ html > body {
   .footer-widget-container {
     background: #585858;
 
+    @media (min-width: 600px) and (max-width: 969px) {
+      padding: 0 15px;
+    }
+
     .footer-widget-area {
       color: #fff;
       max-width: 970px;
@@ -143,8 +179,16 @@ html > body {
       padding: 2em 1em;
       display: flex;
 
+      @media (max-width: 599px) {
+        flex-wrap: wrap;
+      }
+
       .footer-column {
         width: 25%;
+
+        @media (max-width: 599px) {
+          width: 100%;
+        }
 
         .textwidget a {
           font-size: 0.9em;
@@ -158,6 +202,10 @@ html > body {
         padding: 0.5em;
         margin-bottom: 0.5em;
         text-transform: uppercase;
+
+        @media (max-width: 599px) {
+          margin-top: 1.5rem;
+        }
 
         ul {
           margin: 0;

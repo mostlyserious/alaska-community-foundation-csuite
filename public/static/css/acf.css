@@ -11,14 +11,15 @@ html > body.ft_body {
   line-height: 1.5;
 }
 
-html > body .ft_container.container {
-  max-width: none;
-  padding: 0;
-}
-
 html > body .ft_navigation,
 html > body .skiptranslate {
   display: none;
+}
+
+/* Adjust max width so the nav and footer can stretch full width */
+html > body .ft_container.container {
+  max-width: none;
+  padding: 0;
 }
 
 html > body .ft_header,
