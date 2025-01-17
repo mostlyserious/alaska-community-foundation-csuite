@@ -1,138 +1,77 @@
-/* External CSS imports */
-/*@import url('https://alaskacf.org/wp-content/uploads/maxmegamenu/style.css?ver=805df5');*/
-/*@import url('https://alaskacf.org/wp-content/themes/alaskacf2021/style.css?ver=1.0.5');*/
-
-/* Custom Container Styles */
-html > body.ft_body {
-  color: #404040;
-  font-family: "gill-sans-nova", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-html > body .ft_navigation,
-html > body .skiptranslate {
-  display: none;
-}
-
-/* Adjust max width so the nav and footer can stretch full width */
-html > body .ft_container.container {
-  max-width: none;
-  padding: 0;
-}
-
-html > body .ft_header,
-html > body .ft_content {
-  margin: 0 auto;
-
-  @media (min-width: 576px) {
-    max-width: 540px;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 720px;
-  }
-
-  @media (min-width: 992px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 1140px;
-  }
-}
-
-html > body .ft_banner {
-  padding-top: 0; /* Remove space from top */
-}
-
-html > body .ft_footer {
-  text-align: left;
-
-  h1 {
-    font-size: 1em;
-  }
-}
-
-html > body .ft_banner,
-html > body .ft_footer {
-  /* Reset button styles from CSuite in banner and footer */
-  .btn {
-    box-shadow: none;
-    border-radius: inherit;
-  }
-
-  .btn-group-lg>.btn, .btn-lg {
-    padding: .5rem 1rem;
+/* Custom Container Styles
+----------------------------------------------- */
+html > body {
+  &.ft_body {
+    color: #404040;
+    font-family: "gill-sans-nova", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 1.5;
   }
 
-  .btn-danger {
+  .ft_navigation,
+  .skiptranslate {
+    /* Remove the Google Translate button and the built-in nav */
+    display: none;
+  }
+
+  /* Adjust max width so the nav and footer can stretch full width */
+  .ft_container.container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .ft_header,
+  .ft_content {
+    margin: 0 auto;
+
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+
+  .ft_banner {
+    padding-top: 0; /* Remove space from top */
+  }
+
+  .ft_footer {
+    padding-bottom: 0; /* Remove space from bottom */
+    text-align: left;
+
+    h1 {
+      font-size: 1em;
+    }
+  }
+
+  .ft_banner,
+  .ft_footer {
+    /* Reset button styles from CSuite in banner and footer */
+    .btn {
+      box-shadow: none;
+      border-radius: inherit;
+    }
+
+    .btn-group-lg > .btn, .btn-lg {
+      padding: .5rem 1rem;
+      line-height: 1.5;
+    }
+
+    .btn-danger {
       color: #fff;
       background-color: #dc3545;
       border-color: #dc3545;
+    }
   }
 }
-
-
-    html > body a:visited {
-  color: #FFFFFF;
-}
-
-/* Navigation */
-/*.container-fluid {*/
-/*    width: 100%;*/
-/*    padding-right: 15px;*/
-/*    padding-left: 15px;*/
-/*    margin-right: auto;*/
-/*    margin-left: auto;*/
-/*}*/
-
-/*#utilities-menu-area {*/
-/*    position: inline;*/
-/*    background: linear-gradient(90deg, #391B42 0%, #724080 100%);*/
-/*    color: #fff;*/
-
-/*    @media (min-width: 768px) {*/
-/*      position: absolute;*/
-/*      background: transparent;*/
-/*    }*/
-/*}*/
-
-/*.justify-content-center {*/
-/*    -ms-flex-pack: center !important;*/
-/*    justify-content: center !important;*/
-/*}*/
-
-/*.row {*/
-/*    display: -ms-flexbox;*/
-/*    display: flex;*/
-/*    -ms-flex-wrap: wrap;*/
-/*    flex-wrap: wrap;*/
-/*    margin-right: -15px;*/
-/*    margin-left: -15px;*/
-/*}*/
-
-/*.col {*/
-/*    -ms-flex-preferred-size: 0;*/
-/*    flex-basis: 0;*/
-/*    -ms-flex-positive: 1;*/
-/*    flex-grow: 1;*/
-/*    max-width: 100%;*/
-/*}*/
-
-/*.purple-background {*/
-/*    background: linear-gradient(180deg, #391B42 0%, #724080 100%);*/
-/*    color: #fff;*/
-/*}*/
-/*.purple-wedge {*/
-/*    display: none;*/
-
-/*    @media (min-width: 768px) {*/
-/*        display: block;*/
-/*        background: transparent url('https://alaskacf.org/wp-content/themes/alaskacf2021/img/curved-border2.png') top center no-repeat;*/
-/*        background-size: cover;*/
-/*        min-height: 60px;*/
-/*    }*/
-/*}*/

@@ -1,4 +1,4 @@
-/* Global
+/* Custom Container Styles
 ----------------------------------------------- */
 html > body {
   &.ft_body {
@@ -28,14 +28,20 @@ html > body {
 
   .ft_navigation,
   .skiptranslate {
+    /* Remove the Google Translate button and the built-in nav */
     display: none;
   }
 
   .ft_banner {
-    padding-top: 0;
+    padding-top: 0; /* Remove space from top */
+  }
+
+  .ft_footer {
+    padding-bottom: 0; /* Remove space from bottom */
   }
 
   /* Adjust max width so the nav and footer can stretch full width */
+
   .ft_container.container {
     max-width: none;
     padding: 30px 0 0;
@@ -59,7 +65,6 @@ html > body {
     }
   }
 }
-
 
 /* Banner
 ----------------------------------------------- */
@@ -253,3 +258,4 @@ html > body {
       margin-right: 14px;
     }
   }
+}
