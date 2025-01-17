@@ -48,11 +48,15 @@ html > body .ft_banner {
 
 html > body .ft_footer {
   text-align: left;
+
+  h1 {
+    font-size: 1em;
+  }
 }
 
 html > body .ft_banner,
 html > body .ft_footer {
-  /* Unset button styles from CSuite in banner and footer */
+  /* Reset button styles from CSuite in banner and footer */
   .btn {
     box-shadow: none;
     border-radius: inherit;
