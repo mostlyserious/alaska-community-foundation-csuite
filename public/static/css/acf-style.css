@@ -1413,6 +1413,7 @@ width: 50%;
 #menu-top-right-utilities {
   font-size: 1.25em;
   flex-direction: row-reverse;
+  gap: 1rem; /* Added because the nbsp; is being removed */
 }
 #menu-top-right-utilities li {
   margin-right: 0;
