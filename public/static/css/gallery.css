@@ -1,0 +1,31 @@
+/* Provides styles for galleries for some funds */
+/* Example: https://alaskacf-sandbox.fcsuite.com/erp/donate/create/fund?funit_id=8334 */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #5F6062;
+    float: left;
+    width: 180px;	
+    height: 180px;
+  }
+  }
+  div.container{
+    display: block;
+    margin: 0 auto;
+    float: center;
+  }
+  div.gallery:hover {
+    border: 3px solid #E13A35;
+  }
+  
+  div.gallery img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
