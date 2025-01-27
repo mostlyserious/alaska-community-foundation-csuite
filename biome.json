@@ -1,0 +1,79 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": []
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": false,
+			"complexity": {
+				"noUselessConstructor": "warn",
+				"noUselessTernary": "warn"
+			},
+			"correctness": {
+				"noConstAssign": "error",
+				"noInvalidConstructorSuper": "error",
+				"noUndeclaredVariables": "error",
+				"noUnreachableSuper": "error",
+				"noUnusedVariables": "warn",
+				"useYield": "warn"
+			},
+			"style": {
+				"noArguments": "warn",
+				"noVar": "warn",
+				"useBlockStatements": "warn",
+				"useCollapsedElseIf": "warn",
+				"useSingleVarDeclarator": "warn",
+				"useTemplate": "warn"
+			},
+			"suspicious": {
+				"noClassAssign": "warn",
+				"noDoubleEquals": "warn",
+				"noGlobalAssign": "warn",
+				"useAwait": "warn"
+			}
+		}
+	},
+	"javascript": {
+		"globals": [
+			"$",
+			"jQuery"
+		],
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "asNeeded"
+		}
+	},
+	"overrides": [
+		{
+			"include": [
+				"**/*.svelte"
+			],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedVariables": "off",
+						"noUndeclaredVariables": "off"
+					},
+					"style": {
+						"useSingleVarDeclarator": "off"
+					}
+				}
+			}
+		}
+	]
+}
