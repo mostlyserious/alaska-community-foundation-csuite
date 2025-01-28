@@ -99,7 +99,7 @@ html > body {
     line-height: 1;
 
     &:hover {
-      text-decoration: underline;
+      background: #C8C8C8;
     }
   }
 }
