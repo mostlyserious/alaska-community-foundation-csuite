@@ -1,11 +1,9 @@
+@charset "UTF-8";
 /*
 This is a stripped down version of the style.css file from the website.
 */
 
-@charset "UTF-8";
 
-.ft_banner,
-.ft_footer {
 .clearfix, .cf {
   zoom: 1;
 }
@@ -1490,5 +1488,4 @@ width: 50%;
   background-color: #707070 !important;
   color: #fff;
   margin-top: 10px;
-}
 }
