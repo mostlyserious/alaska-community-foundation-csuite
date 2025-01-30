@@ -448,114 +448,141 @@ This is a stripped down version of the style.css file from the website.
 
 /* =Footer
 ----------------------------------------------- */
-.site-footer {
-  background: linear-gradient(to left, #723883, #391B42);
-  color: #FFFFFF;
-  font-size: 0.8em;
-  padding-top: 4em;
-  padding-bottom: 1em;
-}
-.site-footer a {
-  color: #FFFFFF;
-}
-.site-footer li {
-  list-style-type: none;
-}
-.site-footer .site-info {
-  max-width: 970px;
-  margin: auto;
-  padding: 0.5em;
-}
-.site-footer .site-info p {
-  float: left;
-  line-height: 2em;
-  margin-bottom: 0;
-}
-.site-footer .site-info .cf-standards {
-  float: right;
-}
-.site-footer .site-info .cf-standards a {
-  display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  background: url(https://alaskacf.org/wp-content/uploads/2023/06/National-Standards.png) no-repeat;
-  width: 97px;
-  height: 97px;
-  background-size: 97px 97px;
-}
-.site-footer .footer-widget-area {
-  margin: auto;
-  text-transform: uppercase;
-}
-.site-footer .footer-widget-area .footer-column ul {
-  margin-left: 0;
-}
-.site-footer .footer-widget-area .footer-column .textwidget {
-  margin: 0;
-}
-.site-footer .footer-widget-area .footer-column .textwidget a {
-  color: #FFFFFF;
-  font-size: inherit;
-}
-.site-footer .footer-widget-area .footer-column .textwidget a :hover {
-  color: #e5e5e5;
-}
-.site-footer .footer-widget-area .widget-title {
-  font-weight: bold;
-}
-.site-footer .footer-widget-area #nav_menu-12 {
-  background-color: #824095;
-  padding: 1.5em;
-  line-height: 3em;
-}
-.menu-user-logins-container {
-  margin-top: 1em;
-}
-.ie .site-footer .cf-standards a {
-  background-image: url("https://alaskacf.org/wp-content/themes/alaskacf2021/img/cf-standards-ie.jpg");
-}
-.ie7 .site-footer .footer-widget-container .footer-widget-area .footer-column {
-  width: 24%;
-}
-.we-support {
-  text-align: center;
-  font-size: 16px;
-  color: #bebebe;
-}
-.we-support a {
-  min-width: 134px;
-  min-height: 20px;
-  display: inline-block;
-  color: #bebebe;
-  position: relative;
-  margin-right: 14px;
-}
-.we-support a span {
-  font-size: 16px;
-  top: -1px;
-  position: relative;
-}
-.we-support a span:hover {
-  color: #eee;
-  text-decoration: none;
-}
-.we-support a:last-child {
-  margin-right: 0;
-}
-.we-support .ts49-support {
-  background: url("https://alaskacf.org/wp-content/themes/alaskacf2021/img/town-square-49-header-gs.png") no-repeat transparent;
-  background-size: 100% auto;
-  background-position: center bottom;
-  min-width: 160px;
-}
-.we-support .pcg-support {
-  background: url("https://alaskacf.org/wp-content/themes/alaskacf2021/img/picclickgive.jpg") no-repeat transparent;
-  background-size: 100% auto;
-}
-@media screen and (min-width: 768px) {
+.ft_banner,
+.ft_footer {
+  .site-footer {
+    background: linear-gradient(to left, #723883, #391B42);
+    color: #FFFFFF;
+    font-size: 0.8em;
+    padding-top: 4em;
+    padding-bottom: 1em;
+  }
+
+  .site-footer a {
+    color: #FFFFFF;
+  }
+
+  .site-footer li {
+    list-style-type: none;
+  }
+
+  .site-footer .site-info {
+    max-width: 970px;
+    margin: auto;
+    padding: 0.5em;
+  }
+
+  .site-footer .site-info p {
+    float: left;
+    line-height: 2em;
+    margin-bottom: 0;
+  }
+
+  .site-footer .site-info .cf-standards {
+    float: right;
+  }
+
+  .site-footer .site-info .cf-standards a {
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(https://alaskacf.org/wp-content/uploads/2023/06/National-Standards.png) no-repeat;
+    width: 97px;
+    height: 97px;
+    background-size: 97px 97px;
+  }
+
+  .site-footer .footer-widget-area {
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  .site-footer .footer-widget-area .footer-column ul {
+    margin-left: 0;
+  }
+
+  .site-footer .footer-widget-area .footer-column .textwidget {
+    margin: 0;
+  }
+
+  .site-footer .footer-widget-area .footer-column .textwidget a {
+    color: #FFFFFF;
+    font-size: inherit;
+  }
+
+  .site-footer .footer-widget-area .footer-column .textwidget a :hover {
+    color: #e5e5e5;
+  }
+
+  .site-footer .footer-widget-area .widget-title {
+    font-weight: bold;
+  }
+
+  .site-footer .footer-widget-area #nav_menu-12 {
+    background-color: #824095;
+    padding: 1.5em;
+    line-height: 3em;
+  }
+
+  .menu-user-logins-container {
+    margin-top: 1em;
+  }
+
+  .ie .site-footer .cf-standards a {
+    background-image: url("https://alaskacf.org/wp-content/themes/alaskacf2021/img/cf-standards-ie.jpg");
+  }
+
+  .ie7 .site-footer .footer-widget-container .footer-widget-area .footer-column {
+    width: 24%;
+  }
+
   .we-support {
-    text-align: left;
+    text-align: center;
+    font-size: 16px;
+    color: #bebebe;
+  }
+
+  .we-support a {
+    min-width: 134px;
+    min-height: 20px;
+    display: inline-block;
+    color: #bebebe;
+    position: relative;
+    margin-right: 14px;
+  }
+
+  .we-support a span {
+    font-size: 16px;
+    top: -1px;
+    position: relative;
+  }
+
+  .we-support a span:hover {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  .we-support a:last-child {
+    margin-right: 0;
+  }
+
+  .we-support .ts49-support {
+    background: url("https://alaskacf.org/wp-content/themes/alaskacf2021/img/town-square-49-header-gs.png") no-repeat transparent;
+    background-size: 100% auto;
+    background-position: center bottom;
+    min-width: 160px;
+  }
+
+  .we-support .pcg-support {
+    background: url("https://alaskacf.org/wp-content/themes/alaskacf2021/img/picclickgive.jpg") no-repeat transparent;
+    background-size: 100% auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    .we-support {
+      text-align: left;
+    }
   }
 }
 /* =Menu
