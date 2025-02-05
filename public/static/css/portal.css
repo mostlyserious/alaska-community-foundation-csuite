@@ -1,0 +1,80 @@
+/*
+These are styles that modify CSuite components.
+ */
+
+/* Custom Container Styles
+----------------------------------------------- */
+html > body {
+  &.ft_body {
+    color: #404040;
+    font-family: "gill-sans-nova", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .skiptranslate {
+    /* Remove the Google Translate button */
+    display: none;
+  }
+
+  /* Adjust max width so the nav and footer can stretch full width */
+  .ft_container.container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .ft_header,
+  .ft_content {
+    margin: 0 auto;
+
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+
+  .ft_banner {
+    padding-top: 0; /* Remove space from top */
+  }
+
+  .ft_footer {
+    padding-bottom: 0; /* Remove space from bottom */
+    text-align: left;
+
+    h1 {
+      font-size: 1em;
+    }
+  }
+
+  .ft_banner,
+  .ft_footer {
+    /* Reset button styles from CSuite in banner and footer */
+    .btn {
+      box-shadow: none;
+      border-radius: inherit;
+    }
+
+    .btn-group-lg > .btn, .btn-lg {
+      padding: .5rem 1rem;
+      line-height: 1.5;
+    }
+
+    .btn-danger {
+      color: #fff;
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+  }
+}
