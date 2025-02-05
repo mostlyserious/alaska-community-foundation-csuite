@@ -33,18 +33,20 @@ html > body {
     }
   }
 
-  .portal .ft_content {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+  &.portal {
+    .ft_content {
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
+
+    .ft_navigation {
+      box-shadow: 0 3px 2px -2px gray;
+    }
   }
 
   .nav-tabs .nav-link {
     --mdb-nav-tabs-link-active-color: #51a07b;
     --mdb-nav-tabs-link-active-border-color: #51a07b;
-  }
-
-  .portal .ft_navigation {
-    box-shadow: 0 3px 2px -2px gray;
   }
 
   .ft_banner {
