@@ -28,21 +28,23 @@ html > body {
   .ft_content {
     margin: 0 auto;
 
-    /* @media (min-width: 576px) {
-      max-width: 540px;
-    }
-
-    @media (min-width: 768px) {
-      max-width: 720px;
-    }
-
-    @media (min-width: 992px) {
-      max-width: 960px;
-    } */
-
     @media (min-width: 1500px) {
       max-width: 1440px;
     }
+  }
+
+  .portal .ft_content {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .nav-tabs .nav-link {
+    --mdb-nav-tabs-link-active-color: #51a07b;
+    --mdb-nav-tabs-link-active-border-color: #51a07b;
+  }
+
+  .portal .ft_navigation {
+    box-shadow: 0 3px 2px -2px gray;
   }
 
   .ft_banner {
